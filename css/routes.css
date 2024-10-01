@@ -1,0 +1,276 @@
+.title-routes--text {
+    padding-top: 57px;
+    padding-bottom: 42px;
+    background: #F4F4F4;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.routes {
+    background: #F4F4F4;
+    background-image: url('../images/background/bg-quadbike.png');
+    
+}
+
+.routes_inner {
+    padding-top: 25px;
+    padding-left: 70px;
+    padding: 25px 0 118px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.route {
+    display: flex;
+    padding-bottom: 148px;
+    min-width: 0;
+}
+
+.route-extended {
+    flex-direction: row-reverse;
+}
+
+.route:last-child {
+    padding-bottom: 0;
+}
+
+.route-description {
+    padding-left: 181px;
+    padding-right: 30px;
+}
+
+.route-description--extended {
+    padding-left: 140px;
+    padding-right: 70px;
+}
+
+.route-title {
+    padding-bottom: 9px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 108.7%;
+    position: relative;
+}
+
+.route-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 81px;
+    height: 4px;
+    background-image: url('../images/icons/line.svg');
+    top: 15px;
+    left: -111px;
+}
+
+.route-price {
+    padding-bottom: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 108.7%;
+    display: flex;
+}
+
+.img-ruble {
+    padding-left: 12px;
+}
+
+.route-length_time,
+.route-length_distance,
+.route-length_complexity {
+    position: relative;
+    padding-left: 30px;
+    font-weight: 400;
+    line-height: 108.7%;
+    text-transform: uppercase;
+}
+
+.length-thumbnail {
+    font-weight: 600;
+    line-height: 108.7%;
+}
+
+.route-length_distance {
+    padding: 9px 0 10px 30px;
+}
+
+.route-length_time::before,
+.route-length_distance::before,
+.route-length_complexity::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 0px;
+}
+
+.route-length_time::before {
+    background: url('../images/icons/time.svg') 0 0 / 100% no-repeat;
+}
+
+.route-length_distance::before {
+    background: url('../images/icons/map.svg') 0 0 / 100% no-repeat;
+    height: 15px;
+}
+
+.route-length_complexity::before {
+    background: url('../images/icons/star.svg') 0 0 / 100% no-repeat;
+    width: 17px;
+    height: 17px;
+}
+
+.route-path {
+    padding-top: 32px;
+}
+
+.path-title {
+    padding-bottom: 13px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.img-path {
+    padding-left: 15px;
+}
+
+.path-text {
+    max-width: 524px;
+    height: 107px;
+    padding-bottom: 39px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.route-btn_details {
+    width: 175px;
+    height: 45px;
+    margin-right: 15px;
+    border: 1.5px solid #037E8C;
+    color: #037E8C;
+}
+
+.route-btn_details:hover {
+    color: #FFF;
+    background: #037E8C;
+    transition: all 0.4s;
+}
+
+.route-btn_book {
+    width: 175px;
+    height: 45px;
+    background: #037E8C;
+    color: #FFF;
+}
+
+.route-btn_book:hover {
+    color: #037E8C;
+    background: none;
+    border: 1.5px solid #037E8C;
+    transition: all 0.4s;
+}
+
+/* =============== gallery ====================== */
+/* =============== Первый вариант слайдов======== */
+/* .gallery__routes {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container {
+    width: 50%;
+    height: 400px;
+}
+
+.gallery__routes-wrapper  {
+    height: 90%;
+    align-items: center;
+}   
+
+.gallery__routes-slide {
+    height: 300px;
+    width: 250px;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: all .7s;
+}
+
+.swiper-slide-active.gallery__routes-slide  {
+    height: 360px;
+    width: 360px;
+    transition: all .7s;
+    
+    transform: scale(1.44, 1.2);
+} */
+
+/* .routes-slide--img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    background: #121214;;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #037E8C;
+} */
+
+/* ============================== второй вариант ===================================== */
+
+.route__slider {
+    width: 50%;
+}
+
+.route__wrapper {
+    width: 100%;
+    height: 91%;
+    display: flex;
+    align-items: center;
+}
+
+.route__slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.route__slide {
+    /* transform: scale(0.7, 0.75); */
+    width: 250px;
+    max-height: 300px;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: all .7s;
+}
+
+.swiper-slide-active.route__slide {
+    /* transform: scale(0.9, 0.9); */
+    width: 360px;
+    max-height: 360px;
+    transition: all .7s;
+}
+
+.swiper-pagination {
+    text-align: start;
+    height: 2%;
+}
+
+.swiper-pagination-bullet {
+    background: #121214;;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #037E8C;
+}
+
